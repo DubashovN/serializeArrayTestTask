@@ -5,7 +5,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(serialize().replaceAll("[^0-9.,]", ""));
+        System.out.println(serialize().replaceAll("[^0-9.,]", "").length());
     }
 
     public static String serialize() {
@@ -20,7 +20,7 @@ public class Main {
         }
         return string;
     }
-
+    
     public static Integer[] generateArray() {
         Random random = new Random();
         Integer[] intArray = new Integer[1000];
